@@ -1,9 +1,7 @@
-
 def Area_rectangle(x,y):
     return x*y
 def Peri_rectangle(x,y):
-    perimeter = 2 * (x + y)
-    return perimeter
+     return 2 * (x + y)
 def Area_Square(x):
     return x*x
 if __name__=="__main__":
