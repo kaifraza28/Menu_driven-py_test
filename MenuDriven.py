@@ -15,17 +15,25 @@ def Area_Square():
     lenght = int(input("Please Enter the lenght of the square:\n"))
     return lenght*lenght
 
-print("Menu\n 1.Area of Rectangle\n 2.Perimeter of Reactangle\n 3.Area of Square")
-x = int(input("Please Enter your Choice Given:\n"))
-if x==1:
-    a = Area_rectangle()
-    print("The area of rectangle is",a)
-elif x==2:
-    b= Peri_rectangle()
-    print("The perimeter of rectangle is",b)
-elif x==3:
-    c = Area_Square()
-    print("The area of square is",c)
-else:
-    print("Its the wrong input")
+
+
+
+while(True):
+    print("Menu\n 1.Area of Rectangle\n 2.Perimeter of Reactangle\n 3.Area of Square")
+    x = int(input("Please Enter your Choice Given:\n"))
+    if x==1:
+        a = Area_rectangle()
+        print("The area of rectangle is",a)
+        break
+    elif x==2:
+        b= Peri_rectangle()
+        print("The perimeter of rectangle is",b)
+        break
+    elif x==3:
+        c = Area_Square()
+        print("The area of square is",c)
+        break
+    else:
+        print("Its the wrong input")
+        continue
 
